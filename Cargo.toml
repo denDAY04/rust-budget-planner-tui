@@ -1,9 +1,17 @@
 [package]
 name = "rbp_tui"
+description = "Rust Budget Planner - a beginners hubby project - text UI"
 version = "0.1.0"
 authors = ["Andreas Stensig <stensig04@gmail.com>"]
 edition = "2018"
-
+license = "MIT"
+repository = "https://github.com/denDAY04/rust-budget-planner-tui"
+readme = "README.md"
+keywords = ["beginner", "budget"]
+categories = []
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rbp_core = { git = "https://github.com/denDAY04/rust-budget-planner-core"}
+console = "0.12.0"
+dialoguer = "0.6.2"

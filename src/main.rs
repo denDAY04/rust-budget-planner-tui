@@ -1,3 +1,8 @@
+mod tui;
+
+use console::Term;
+
 fn main() {
-    println!("Hello, world!");
+    let terminal = Term::stdout();
+    terminal.write_line("Welcome to the Rust Budget Planner");
 }
